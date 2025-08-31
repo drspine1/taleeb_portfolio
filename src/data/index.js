@@ -1,0 +1,234 @@
+export const navItems = [
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Testimonials", link: "#testimonials" },
+  { name: "Contact", link: "#contact" },
+];
+
+export const gridItems = [
+  {
+    id: 1,
+    title: "I believe in strong client engagement, creating a collaborative and communicative process",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/images/set.jpg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "I maintain flexibility in scheduling to accommodate global time zones.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "images/globe.jpg",
+  },
+  {
+    id: 3,
+    title: "My tech stack",
+    description: "I continuously expand and refine",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Tech-driven problem solver with a passion for creating and improving.",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "/images/loader.jpg",
+  },
+
+  { 
+    id: 5,
+    title: "Currently building a job application website using Next.js",
+    description: "The Inside Scoop",
+    className: "md:col-span-3 md:row-span-1",
+    //imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+ 
+    spareImg: "/images/code.jpg",
+  },
+  {
+    id: 6,
+    title: "Are you interested in building something together?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];
+
+ 
+export const services = [
+  {
+    id:1,
+    description:"Building modern, responsive, and accessible websites using React, Next.js, and Tailwind CSS.",
+      title: "frontend web developement",
+  },
+  {
+    id:2,
+    description:
+      "Translating Figma or design mockups into pixel-perfect, interactive user interfaces..",
+      title: "UI/UX Design implementation",
+  },
+  {
+    id:3,
+    description:
+      "Improving performance, SEO, and accessibility to make websites faster and more discoverable",
+    title: "website optimization",
+  },
+  {
+    id:4,
+    description:
+      "Debugging UI issues and refactoring code to make it more efficient, maintainable, and scalable.",
+      title: "bugs fixing & code refactoring",
+  },
+  {
+    id: 5,
+    description:
+      "Connecting frontend apps to REST APIs or third-party services (e.g. Stripe, Auth systems).",
+      title: "API Integration",
+  },
+  {
+    id: 6,
+    description:
+      "Helping beginners learn frontend basics and grow in their web development journey.",
+      title: "mentorship & training",
+  }
+];
+
+export const companies = [
+  {
+    id: 1,
+    name: "cloudinary",
+    img: "/cloud.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "appwrite",
+    img: "/app.svg",
+    nameImg: "/appName.svg",
+  },
+  {
+    id: 3,
+    name: "HOSTINGER",
+    img: "/host.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "stream",
+    img: "/s.svg",
+    nameImg: "/streamName.svg",
+  },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Frontend Engineer Intern",
+    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Mobile App Dev - JSM Tech",
+    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Freelance App Dev Project",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+  },
+];
+
+export const projects= [
+  {
+    id:1,
+    description: 'A website for a gym or fitness center that provides information about membership plans, class schedules, trainer profiles, and facilities.',
+   technologies: [ 'CSS', ' JavaScript', ' React'],
+    demo:"https://afims-fitness-gym.vercel.app",
+    
+    github:"https://github.com/drspine1/afims-fitness-gym.git",
+    image:"images/gym2.jpg",
+     title:"fitness website"
+
+       
+  },
+  {
+    id:2,
+
+    description: "An online store for selling products or services. It includes product listings with images, descriptions, prices, and customer reviews.",
+   technologies: [ 'redux-toolkit', ' React', ' tailwind'],
+   demo:"https://anabe-ecommerce.vercel.app",
+   github:"https://github.com/drspine1/anabe-ecommerce.git",
+   image:"images/p.jpg",
+   title:"e-Commerce website"
+
+  },
+  {
+    id:3,
+  
+    description: " A platform for buying, selling, and renting properties. It typically includes property listings with images, descriptions, prices, and contact information for estate agents.",
+   technologies: [ 'JavaScript', ' React', ' tailwind'],
+   demo:"https://kaison-real-estate.vercel.app",
+   github:"https://github.com/drspine1/kaison-real-estate.git",
+   image:"images/p1.jpg",
+   title:"Real estate website"
+  },
+  {
+    id:4,
+    
+    description: " An online presence for a barbershop that showcases services, pricing, barber profiles & apppointment booking. ",
+   technologies: ['JavaScript', ' React', ' tailwind'],
+   demo:"https://prime-barbershop.vercel.app",
+   github:"https://github.com/drspine1/prime-barbershop.git",
+   image:"images/barber1.jpg",
+   title:"saloon website"
+  }
+]
