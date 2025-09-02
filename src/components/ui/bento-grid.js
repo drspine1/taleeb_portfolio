@@ -120,13 +120,28 @@ export const BentoGridItem = ({
        
        {
         id===6 &&(
-         <button className="block mx-auto mb-4 ">
-           <a  href="mailto:idrismutolib5@gmail.com" className="block">
-            <ButtonsCard
-               className={"mt-4 w-[150px] h-[50px] text-lg  text-[#e4ecff] font-bold bg-[#161A31] hover:bg-[#1a1a2e] border border-[#e4ecff] hover:border-[#1a1a2e] transition-all duration-300"}
-            ><span>Contact Me</span></ButtonsCard>
+          <a  href="mailto:idrismutolib5@gmail.com"
+        
+            className="mt-5 inline-block">
+              
+            <motion.button 
+              initial={{scaleZ:0.7,opacity:0}}
+                whileInView={{scaleZ:0, opacity:1}}
+                viewport={{once:true, amount:0.2}}
+                transition={{delay:0.2,duration:0.4}}
+            className="relative inline-flex overflow-hidden rounded-lg p-[1px] ">
+                <span
+                  className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
+                 bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+                />
+                <span
+                  className="inline-flex h-full w-full cursor-pointer items-center 
+                justify-center rounded-lg bg-slate-950 px-5 py-2 text-[#BEC1DD] backdrop-blur-3xl  text-lg hover:border-[#1a1a2e] transition-all duration-300 z-10 hover:bg-[#1a1a2e] capitalize font-bold"
+                >
+                contact me
+                </span>
+              </motion.button>
           </a>
-         </button>
         )
        }
 
