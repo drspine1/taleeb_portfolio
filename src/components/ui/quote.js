@@ -12,7 +12,7 @@ export function Quote() {
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.2,duration:0.4}}
-      className=" text-xl md:text-xl pt-10 pb-2 uppercase text-[#e4ecff]">my favorite <span className="text-purple-400">"quotes"</span></motion.h2>
+      className=" text-xl md:text-xl pt-10 pb-2 uppercase text-[#e4ecff]">my favorite <span className="text-purple-400">&quot;quotes&quot;</span></motion.h2>
       <motion.p 
         initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}

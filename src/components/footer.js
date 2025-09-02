@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
+
 const Footer = () => {
 return (
 <>
@@ -43,7 +44,7 @@ className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8 mr-1.5"></
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.2,duration:0.4}}
-  className=" text-lg  w-full text-[#BEC1DD]">I'm currently looking for new opportunities. i'm open to discussing web development projects (frontend),and  collaborations. Let's connect and create something amazing together!
+  className=" text-lg  w-full text-[#BEC1DD]">I&apos;m currently looking for new opportunities. i&apos;m open to discussing web development projects (frontend),and  collaborations. Let&apos;s connect and create something amazing together!
 </motion.p>
 </div>
 <motion.p 
@@ -66,9 +67,9 @@ className=" text-sm md:text-lg  w-full   text-[#BEC1DD]"> Feel free to reach out
         />
         <span
           className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-lg bg-slate-950 px-5 py-2 text-[#BEC1DD] backdrop-blur-3xl font-medium text-lg hover:border-[#1a1a2e] transition-all duration-300 z-10 hover:bg-[#1a1a2e]"
+        justify-center rounded-lg bg-slate-950 px-5 py-2 text-[#BEC1DD] backdrop-blur-3xl font-medium text-lg hover:border-[#1a1a2e] transition-all duration-300 z-10 hover:bg-[#1a1a2e]   "
         >
-          let's talk
+          Let&apos;s talk
         </span>
       </motion.button>
   </a>
@@ -82,7 +83,7 @@ className=" text-sm md:text-lg  w-full   text-[#BEC1DD]"> Feel free to reach out
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.2,duration:0.4}}
     className="icons flex items-center gap-4 justify-center">
-      <a href="mailto:idrismutolib5@gmail.com" className="hover:transform hover:translate-y-[-4px] transition duration-500"><MdOutlineEmail className="text-purple-400 uppercase pb-2 text-3xl"/></a>
+      <a href="mailto:idrismutolib5@gmail.com" className="hover:transform hover:translate-y-[4px] transition duration-500"><MdOutlineEmail className="text-purple-400  pb-2 text-3xl hover:transform hover:translate-y-[4px] transition duration-500"/></a>
      <a href="https://github.com/drspine1" target="_blank" className="hover:transform hover:translate-y-[-4px] transition duration-500"> <FaGithub className="text-purple-400 uppercase pb-2 text-3xl"/></a>
     </motion.div>
         <motion.small

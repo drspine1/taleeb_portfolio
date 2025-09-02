@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const Services = () => {
   return ( 
     <>
-<section id="service" className="services  mt-40 mx-auto w-full px-6 md:px-10 lg:px-20 text-center">
+<section id="service" className=" mt-40 mx-auto w-full px-6 md:px-10 lg:px-20 text-center">
   <motion.h1
         initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
