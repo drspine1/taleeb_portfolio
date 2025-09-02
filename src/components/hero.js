@@ -30,8 +30,7 @@ export const HomePage = () => {
      <a href="projects" className="mt-5 inline-block">
        <ButtonsCard
    className={"mt-10 w-[180px] md:w-[150px] md:h-[50px] h-[70px] text-lg text-[#e4ecff] font-medium bg-[#000319] hover:bg-[#1a1a2e] border border-[#e4ecff]  hover:border-[#1a1a2e] transition-all duration-300 z-10 "}
-   title={"View my Work"}
-   />
+   ><span>View My Work</span></ButtonsCard>
   </a>
   </motion.div>
   </div>
