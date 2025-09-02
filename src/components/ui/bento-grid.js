@@ -123,7 +123,7 @@ export const BentoGridItem = ({
          <button className="block mx-auto mb-4 ">
            <a  href="mailto:idrismutolib5@gmail.com" className="block">
             <ButtonsCard
-            children="Contact Me"
+            title="Contact Me"
              className={"mt-4 w-[150px] h-[50px] text-lg  text-[#e4ecff] font-bold bg-[#161A31] hover:bg-[#1a1a2e] border border-[#e4ecff] hover:border-[#1a1a2e] transition-all duration-300"}
             />
           </a>
