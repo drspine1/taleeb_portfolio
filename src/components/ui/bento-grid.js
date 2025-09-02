@@ -133,7 +133,9 @@ export const BentoGridItem = ({
 
          {
         id===7 &&(
-         <a href="mailto:idrismutolib5@gmail.com" className="mt-5 inline-block">
+         <a  href="/images/Mutolib_Resume.pdf"
+            download 
+            className="mt-5 inline-block">
               
             <motion.button 
               initial={{scaleZ:0.7,opacity:0}}

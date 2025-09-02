@@ -4,7 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 export const ButtonsCard = ({
-  children,
+  title,
   className,
   onClick
 }) => {
@@ -17,7 +17,7 @@ export const ButtonsCard = ({
       )}>
       <div className="absolute inset-0 dark:bg-dot-white/[0.1] bg-dot-black/[0.1]" />
      
-      <div className="relative z-40 py-2 px-4 md:py-0 md:px-0">{children}</div>
+      <div className="relative z-40 py-2 px-4 md:py-0 md:px-0">{title}</div>
     </div>
   );
 };
