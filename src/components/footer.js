@@ -10,7 +10,7 @@ return (
 <section id="contact"   className="relative w-full pt-40  mx-auto text-center ">
   <div className=" w-full absolute left-0 h-[70vh] bottom-0 md:-bottom-40 md:min-h-[100vh] bg-[transparent]">
    <img src="/images/footerimage.jpg" alt="footer background image"
-   className="h-full w-full object-cover object-center  opacity-5"
+   className="h-full w-full object-cover object-center  md:opacity-5 opacity-10"
    />
   </div>
  

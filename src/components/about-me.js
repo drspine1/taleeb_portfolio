@@ -5,7 +5,7 @@ import { gridItems } from "@/data";
 const AboutPage = () => {
   return ( 
     <>
-  <section id="about" className="w-full mt-20 mx-auto flex flex-col items-center justify-center text-center px-5 sm:px-0 pt-20 pb-10"
+  <section id="about" className="w-full mt-20 mx-auto flex flex-col items-center justify-center text-center px-2 sm:px-0 pt-20 pb-10"
    style={{
          background: "rgb(4,7,29)",
         backgroundColor:
@@ -25,7 +25,7 @@ const AboutPage = () => {
             transition={{delay:0.4,duration:0.4}}
        className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase" >About {" "} <span className="text-purple-400">me</span></motion.h2>
          <motion.div className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></motion.div>
-          <p  className=" text-lg  w-full text-[#BEC1DD]">A glimpse into my work and values, where ideas meet clean, and functional code</p>
+          <p  className=" text-lg  md:w-full  max-w-[90%] text-[#BEC1DD]">A glimpse into my work and values, where ideas meet clean, and functional code</p>
     <div>
       <BentoGrid className="w-full py-20">
         {

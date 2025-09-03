@@ -27,13 +27,13 @@ export const HomePage = () => {
     viewport={{once:true, amount:0.4}}
     transition={{delay:0.2,duration:0.4}}
   >
-   <a  href=""
+   <a  href="#about"
               
               className="mt-5 inline-block">
                 
               <motion.button 
                 initial={{scaleZ:0.7,opacity:0}}
-                  whileInView={{scaleZ:0, opacity:1}}
+                  whileInView={{scaleZ:0, opacity:1}}    
                   viewport={{once:true, amount:0.2}}
                   transition={{delay:0.2,duration:0.4}}
               className="relative inline-flex overflow-hidden rounded-lg p-[1px] ">
@@ -43,10 +43,8 @@ export const HomePage = () => {
                   />
                   <span
                     className="inline-flex h-full w-full cursor-pointer items-center 
-                  justify-center rounded-lg bg-slate-950 px-5 py-2 text-[#BEC1DD] backdrop-blur-3xl  text-lg hover:border-[#1a1a2e] transition-all duration-300 z-10 hover:bg-[#1a1a2e] capitalize font-bold"
-                  >
-                  download
-                  </span>
+                  justify-center rounded-lg bg-slate-950 px-5 py-2 text-[#BEC1DD] backdrop-blur-3xl  text-lg hover:border-[#1a1a2e] transition-all duration-300 z-10 hover:bg-[#1a1a2e]  font-bold"
+                  >View my work</span>
                 </motion.button>
             </a>
   </motion.div>

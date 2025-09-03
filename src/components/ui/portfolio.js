@@ -70,12 +70,14 @@ const RecentProjects = () => {
               
                 
 
-                <div className=" mx-auto flex items-center gap-1 p-2  mt-6 text-center w-[150px] h-[50px] text-sm text-[#e4ecff] font-bold bg-[#000319] hover:bg-[#1a1a2e] border border-[#e4ecff]">
+                <a 
+                href={demo} target="_blank" 
+                className=" mx-auto flex items-center gap-1 p-2  mt-6 text-center w-[150px] h-[50px] text-sm text-[#e4ecff] font-bold bg-[#000319] hover:bg-[#1a1a2e] border border-[#e4ecff]">
                   <p className="flex  md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-1" color="#CBACF9" />
-                </div>
+                </a>
              
             </PinContainer>
           </div>

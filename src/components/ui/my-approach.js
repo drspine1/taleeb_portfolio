@@ -3,11 +3,12 @@ import React from "react";
 
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
+import { cn } from "@/lib/utils";
 
 export function MyApproach() {
   return (
     <>
-      <div className="services  mt-20 mx-auto w-full  px-6 lg:px-20 text-center">
+      <div className="services  mt-20 mx-auto w-full  px-2 lg:px-20 text-center">
         
   <motion.p 
     initial={{y:"10px",opacity:0}}
@@ -36,7 +37,7 @@ export function MyApproach() {
           {/* Radial gradient for the cute fade */}
          
         </Card>
-        <Card title="Test & Deliver" icon={<AceternityIcon order={"stage 3"}/>} desc={" Ensure quality with testing, fix issues, optimize performance, then deploy and hand over with documentation"}>
+        <Card title="Test & Deliver" icon={<AceternityIcon order={"step 3"}/>} desc={" Ensure quality with testing, fix issues, optimize performance, then deploy and hand over with documentation"}>
           <CanvasRevealEffect
              animationSpeed={3}
             containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
@@ -57,10 +58,14 @@ const Card = ({
   desc
 }) => {
   const [hovered, setHovered] = React.useState(false);
+  const toggleHover = () => setHovered((prev) => !prev);
   return (
     <div
+      
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+       onClick={toggleHover}
+     
       className="border  group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4  h-[20rem] relative rounded-3xl"
        style={{
               
@@ -71,11 +76,11 @@ const Card = ({
              
             }}
       >
-      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-10 w-10 opacity-30 -bottom-3 -left-3 dark:text-white text-white" />
-      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -right-3 dark:text-white text-white" />
+      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -left-3 text-white" />
+      <Icon className="absolute h-10 w-10 opacity-30 -bottom-3 -left-3  text-white" />
+      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -right-3 text-white" />
       <Icon
-        className="absolute h-10 w-10 opacity-30 -bottom-3 -right-3 dark:text-white text-white" />
+        className="absolute h-10 w-10 opacity-30 -bottom-3 -right-3  text-white" />
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -88,15 +93,37 @@ const Card = ({
       </AnimatePresence>
       <div className="relative z-20">
         <div
-          className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
-        group-hover/canvas-card:opacity-0 transition duration-200 min-w-40 mx-auto flex items-center justify-center text-[#e4ecff]">
-          {icon}
-        </div>
+  className={cn(
+    "text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center text-[#e4ecff] transition duration-200",
+    hovered ? "opacity-0 -translate-y-4" : "opacity-100"
+  )}
+>
+  {icon}
+</div>
+
+    
         <h2
-          className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-[#e4ecff] mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-4 transition duration-100">
-          {title}
-        </h2>
-        <p className="dark:text-white text-lg opacity-0 group-hover/canvas-card:opacity-100 relative z-10  mt-4   group-hover/canvas-card:text-[#BEC1DD] group-hover/canvas-card:-translate-y-4 transition duration-200">{desc}</p>
+  className={cn(
+    "dark:text-white text-xl relative z-10 mt-4 font-bold transition duration-200",
+    hovered
+      ? "opacity-100 -translate-y-4 text-white"
+      : "opacity-0 text-[#e4ecff]"
+  )}
+>
+  {title}
+</h2>
+
+<p
+  className={cn(
+    "dark:text-white text-lg relative z-10 mt-4 transition duration-200",
+    hovered
+      ? "opacity-100 -translate-y-4 text-[#BEC1DD]"
+      : "opacity-0"
+  )}
+>
+  {desc}
+</p>
+
       </div>
     </div>
   );
@@ -122,10 +149,9 @@ const AceternityIcon = ({order}) => {
   </>)
 };
 
-export const Icon = ({
-  className,
-  ...rest
-}) => {
+
+
+export const Icon = ({ className, ...rest }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -134,8 +160,10 @@ export const Icon = ({
       strokeWidth="1.5"
       stroke="currentColor"
       className={className}
-      {...rest}>
+      {...rest}
+    >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>
   );
 };
+

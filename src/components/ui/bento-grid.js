@@ -99,7 +99,7 @@ export const BentoGridItem = ({
             <div className="flex  flex-col gap-2">
               {
                 leftList.map((item,index) =>{
-                return <span key={index} className="text-[#C1C2D3] bg-[#10132E] p-1 md:p-2 rounded capitalize text-sm">
+                return <span key={index} className="text-[#C1C2D3] bg-[#10132E] p-1 md:p-2 rounded capitalize text-xs md:text-sm">
                 {item}
                 </span>
               })
@@ -108,7 +108,7 @@ export const BentoGridItem = ({
             <div className="flex  flex-col gap-2">
                {
                 rightList.map((item,index) =>{
-                return <span key={index} className="text-[#C1C2D3] bg-[#10132E] p-1 md:p-2 rounded capitalize text-sm">
+                return <span key={index} className="text-[#C1C2D3] bg-[#10132E] p-1 md:p-2 rounded capitalize text-xs md:text-sm">
                 {item}
                 </span>
               })
@@ -148,6 +148,8 @@ export const BentoGridItem = ({
          {
         id===7 &&(
          <a  href="/images/Mutolib_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
             download 
             className="mt-5 inline-block">
               
