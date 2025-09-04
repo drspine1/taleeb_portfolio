@@ -64,7 +64,7 @@ export const gridItems = [
   },
   {
   id: 7,
-  title: "Download my resume to know more.",
+  title: "Download my Resume to know more.",
   description: "",
   className: "lg:col-span-2 md:col-span-3 md:row-span-1     h-[30vh]",
   imgClassName: "w-12 h-12", // optional if you want an icon/image
