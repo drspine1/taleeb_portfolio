@@ -86,7 +86,7 @@ export const BentoGridItem = ({
             
            )}>
               <div
-          className={`font-sans font-extralight text-left max-w-[10rem] flex flex-wrap md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10  ${id===3 && "max-w-[8rem] md:max-w-[10rem]"}`} >
+          className={`font-sans font-extralight text-left max-w-[10rem] flex flex-wrap md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10  ${id===3 && "max-w-[7rem] md:max-w-[10rem]"}`} >
           {description}
         </div>
           <div
