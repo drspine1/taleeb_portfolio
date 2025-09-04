@@ -19,6 +19,8 @@ export function MyApproach() {
    
         transition={{delay:0.4,duration:0.4}}
   className="text-[#BEC1DD] lowercase text-lg" >is to collaborate closely, communicate openly, and deliver with continuous improvement.</motion.span></motion.p>
+  <p className="text-[#BEC1DD] lowercase text-xs mt-4 block md:hidden">double click to open the cards below</p>
+  
     {/* <div className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></div> */}
          <div
         className="pt-10 flex flex-col lg:flex-row items-center   justify-center  w-full gap-4 mx-auto px-8">

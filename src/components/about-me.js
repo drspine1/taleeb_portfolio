@@ -5,14 +5,15 @@ import { gridItems } from "@/data";
 const AboutPage = () => {
   return ( 
     <>
-  <section id="about" className="w-full mt-20 mx-auto flex flex-col items-center justify-center text-center px-2 sm:px-0 pt-20 pb-10"
+  <section id="about" 
+  >
+      <div className="w-full mt-20 mx-auto flex flex-col items-center justify-center text-center px-2 sm:px-0 pt-20 pb-10"
    style={{
-         background: "rgb(4,7,29)",
+         background: "rgb(4,7,29)",      
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
-  >
-        <motion.h5  
+      }}>
+          <motion.h5  
         initial={{scaleZ:0.5,opacity:0}}
         whileInView={{scaleZ:1, opacity:1}}
         viewport={{once:true, amount:0.4}}
@@ -47,6 +48,7 @@ const AboutPage = () => {
         }
       </BentoGrid>
     </div>
+      </div>
   </section>
     </>
    );

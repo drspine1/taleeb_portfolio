@@ -28,7 +28,7 @@ export default function Home() {
           { name: "About", link: "#about"  },
           { name: "Projects", link: "#projects"  },
           { name: "Contact", link: "#contact" },
-          { name: "Service", link: "#service"  },
+          { name: "Services", link: "#service"  },
          
         ]}
         />
@@ -39,7 +39,7 @@ export default function Home() {
          <RecentProjects/>
          <MyApproach/>
          <Quote/>
-         <BackgroundRippleEffect/>
+    
          <Footer/>
       </div>
       </main>

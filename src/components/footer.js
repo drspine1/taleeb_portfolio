@@ -8,7 +8,7 @@ const Footer = () => {
 return (
 <>
 <section id="contact"   className="relative w-full pt-40  mx-auto text-center ">
-  <div className=" w-full absolute left-0 h-[70vh] bottom-0 md:-bottom-40 md:min-h-[100vh] bg-[transparent]">
+  <div className=" w-full absolute left-0 h-[90vh] bottom-0 md:-bottom-40 md:min-h-[100vh] bg-[transparent]">
    <img src="/images/footerimage.jpg" alt="footer background image"
    className="h-full w-full object-cover object-center  md:opacity-5 opacity-10"
    />
@@ -73,6 +73,7 @@ className=" text-sm md:text-lg  w-full   text-[#BEC1DD]"> Feel free to reach out
         </span>
       </motion.button>
   </a>
+
 </div>
 
     <div className="footer w-full border-t-2   py-8 border-[#323032] mt-10">
@@ -83,6 +84,7 @@ className=" text-sm md:text-lg  w-full   text-[#BEC1DD]"> Feel free to reach out
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.2,duration:0.4}}
     className="icons flex items-center gap-4 justify-center">
+      
       <a href="mailto:idrismutolib5@gmail.com" className="hover:transform hover:translate-y-[4px] transition duration-500"><MdOutlineEmail className="text-purple-400  pb-2 text-3xl hover:transform hover:translate-y-[4px] transition duration-500"/></a>
      <a href="https://github.com/drspine1" target="_blank" className="hover:transform hover:translate-y-[-4px] transition duration-500"> <FaGithub className="text-purple-400 uppercase pb-2 text-3xl"/></a>
     </motion.div>
