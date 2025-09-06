@@ -7,7 +7,7 @@ const AboutPage = () => {
     <>
   <section id="about" 
   >
-      <div className="w-full mt-20 mx-auto flex flex-col items-center justify-center text-center px-2 sm:px-0 pt-20 pb-10"
+      <div className="w-full mt-10 md:mt-20 mx-auto flex flex-col items-center justify-center text-center px-2 sm:px-0 pt-20 pb-10"
    style={{
          background: "rgb(4,7,29)",      
         backgroundColor:

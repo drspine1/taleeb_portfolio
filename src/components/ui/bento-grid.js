@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ButtonsCard } from "./tailwindcss-buttons"
 
+
+import Image from "next/image"
 
 export const BentoGrid = ({
   className,
@@ -34,13 +34,13 @@ export const BentoGridItem = ({
     img, 
     spareImg
 }) => {
-
+console.log(img,spareImg)
   const leftList =["react", "nextjs", "javascript", "typescript", "tailwindcss"];
   const rightList = ["redux-toolkit", "mongodb","git","git-hub","zustand" ]
   return (
     <div
       className={cn(
-        `row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4`,
+        `row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 `,
         className
         
       )}
@@ -51,13 +51,16 @@ export const BentoGridItem = ({
         animation: id===6 && "gradientBG 16s ease infinite",
       }}
       >
-        <div className={`h-full `}>
+        <div className={`h-full w-full `}>
   <div className="abolute w-full h-full">
     {
     img && (
-      <img
+      <Image
         src={img}
         alt={title}
+        
+         width={400}
+         height={300}
         className={cn(
           "object-cover object-center opacity-40 ",
           imgClassName
@@ -69,9 +72,11 @@ export const BentoGridItem = ({
           <div  className={`absolute right-0 -bottom-5 ${id===5 && id===4 && "w-full opacity-0"
             } `}>
             {spareImg && (
-              <img
+              <Image
                 src={spareImg}
                 alt={title}
+                 width={400}
+                height={300}
                 className={cn(
                   " object-cover object-center  opacity-20 ",
                   imgClassName
@@ -124,11 +129,8 @@ export const BentoGridItem = ({
         
             className="mt-5 inline-block">
               
-            <motion.button 
-              initial={{scaleZ:0.7,opacity:0}}
-                whileInView={{scaleZ:0, opacity:1}}
-                viewport={{once:true, amount:0.2}}
-                transition={{delay:0.2,duration:0.4}}
+            <button 
+              
             className="relative inline-flex overflow-hidden rounded-lg p-[1px] ">
                 <span
                   className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
@@ -140,7 +142,7 @@ export const BentoGridItem = ({
                 >
                 contact me
                 </span>
-              </motion.button>
+              </button>
           </a>
         )
        }
@@ -153,11 +155,8 @@ export const BentoGridItem = ({
             download 
             className="mt-5 inline-block">
               
-            <motion.button 
-              initial={{scaleZ:0.7,opacity:0}}
-                whileInView={{scaleZ:0, opacity:1}}
-                viewport={{once:true, amount:0.2}}
-                transition={{delay:0.2,duration:0.4}}
+            <button 
+              
             className="relative inline-flex overflow-hidden rounded-lg p-[1px] ">
                 <span
                   className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
@@ -169,7 +168,7 @@ export const BentoGridItem = ({
                 >
                 download
                 </span>
-              </motion.button>
+              </button>
           </a>
         )
        }

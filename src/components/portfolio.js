@@ -1,10 +1,9 @@
 "use client";
 import {motion} from "motion/react";
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { projects } from "@/data";
-import { PinContainer } from "./3d-pin";
-
+import { PinContainer } from "./ui/3d-pin";
+import Image from "next/image"
 const RecentProjects = () => {
   return (
     <div id="projects" className="py-20 w-full mx-auto text-center mt-40">
@@ -19,7 +18,7 @@ const RecentProjects = () => {
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.4,duration:0.4}}
-      className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase">
+      className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase mx-auto w-[96%]  md:w-full">
         A small selection of{" "}
         <span className="text-purple-400">recent projects</span>
       </motion.h1>
@@ -45,10 +44,11 @@ const RecentProjects = () => {
                   style={{ backgroundColor: "#13162D" }}
                 >
                  
-                </div>
-                <img
+                </div>           
+                <Image
                   src={image}
                   alt="cover"
+                  fill
                   className="z-10 absolute bottom-0"
                 />
               </div>
@@ -76,7 +76,7 @@ const RecentProjects = () => {
                   <p className="flex  md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-1" color="#CBACF9" />
+                  <FaArrowUpRightFromSquare className="ms-1" color="#CBACF9" />
                 </a>
              
             </PinContainer>

@@ -19,7 +19,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
-    spareImg: "images/globe.jpg",
+    spareImg: "/images/globe.jpg",
   },
   {
     id: 3,
@@ -128,7 +128,7 @@ export const projects= [
     demo:"https://afims-fitness-gym.vercel.app",
     
     github:"https://github.com/drspine1/afims-fitness-gym.git",
-    image:"images/gym2.jpg",
+    image:"/images/gym2.jpg",
      title:"fitness website"
 
        
@@ -140,7 +140,7 @@ export const projects= [
    technologies: [ 'redux-toolkit', ' React', ' tailwind'],
    demo:"https://anabe-ecommerce.vercel.app",
    github:"https://github.com/drspine1/anabe-ecommerce.git",
-   image:"images/p.jpg",
+   image:"/images/p.jpg",
    title:"e-Commerce website"
 
   },
@@ -151,7 +151,7 @@ export const projects= [
    technologies: [ 'JavaScript', ' React', ' tailwind'],
    demo:"https://kaison-real-estate.vercel.app",
    github:"https://github.com/drspine1/kaison-real-estate.git",
-   image:"images/p1.jpg",
+   image:"/images/p1.jpg",
    title:"Real estate website"
   },
   {
@@ -161,7 +161,7 @@ export const projects= [
    technologies: ['JavaScript', ' React', ' tailwind'],
    demo:"https://prime-barbershop.vercel.app",
    github:"https://github.com/drspine1/prime-barbershop.git",
-   image:"images/barber1.jpg",
+   image:"/images/barber1.jpg",
    title:"saloon website"
   }
 ]

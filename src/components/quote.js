@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Quote() {
   return (

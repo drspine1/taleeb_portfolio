@@ -10,7 +10,7 @@ import Link from "next/link";
 export const HomePage = () => {
   return ( 
   <>
-  <div id="home" className="hero-section pb-20 pt-36 h-screen relative w-full">
+  <div id="home" className="hero-section pb-20 pt-36 h-screen relative w-full bg-opacity-20 z-50">
   <div>
       <Spotlight className="top-[50%] left-[50%] md:-left-32 md:-top-20 h-screen" fill="white"/>
       <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple"/>
@@ -34,7 +34,7 @@ export const HomePage = () => {
   href="#projects"
   initial={{ scaleZ: 0.7, opacity: 0 }}
   whileInView={{ scaleZ: 0, opacity: 1 }}
-  className="relative inline-flex overflow-hidden rounded-lg p-[1px]  cursor-pointer mt-6"
+  className="relative inline-flex overflow-hidden rounded-lg p-[1px]  cursor-pointer mt-6 opacity-20"
 >
   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
    bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />

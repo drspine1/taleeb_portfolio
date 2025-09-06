@@ -44,7 +44,7 @@ export const StarBackground = () => {
         left: Math.random() * 100,
         size: Math.random() * 3 + 2,
         fallDuration: Math.random() * 3 + 1,
-        opacity: Math.random() * 0.5 + 0.5,
+        opacity: Math.random() * 0.4 + 0.3,
       })
     }
     setMeteors(newMeteors)

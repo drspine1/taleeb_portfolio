@@ -1,11 +1,11 @@
 import AboutPage from "@/components/about-me";
 import { HomePage } from "@/components/hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import RecentProjects from "@/components/ui/portfolio";
-// import PortfolioPage from "@/components/ui/portfolio";
-import Services from "@/components/ui/services";
-import { MyApproach } from "@/components/ui/my-approach";
-import { Quote } from "@/components/ui/quote";
+import RecentProjects from "@/components/portfolio";
+
+import Services from "@/components/services";
+import { MyApproach } from "@/components/my-approach";
+import { Quote } from "@/components/quote";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import Footer from "@/components/footer";
 import { StarBackground } from "@/components/star-background";
@@ -39,7 +39,8 @@ export default function Home() {
          <RecentProjects/>
          <MyApproach/>
          <Quote/>
-    
+         <BackgroundRippleEffect/>
+         {/* Footer Section */}
          <Footer/>
       </div>
       </main>

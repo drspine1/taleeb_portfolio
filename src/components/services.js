@@ -1,6 +1,6 @@
 "use client";
 import { services } from "@/data";
-import { Button } from "./moving-border";
+import { Button } from "./ui/moving-border";
 import { motion } from "motion/react";
 
 const Services = () => {
