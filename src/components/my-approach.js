@@ -66,7 +66,7 @@ const Card = ({
       onMouseLeave={!isTouch ? () => setHovered(false) : undefined}
       onClick={isTouch ? () => setHovered((prev) => !prev) : undefined}
      
-      className="border  group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4  h-[20rem] relative rounded-3xl"
+      className="border  group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4  h-[20rem] relative rounded-xl cursor-pointer overflow-hidden"
        style={{
               
               background: "rgb(4,7,29)",
@@ -76,11 +76,11 @@ const Card = ({
              
             }}
       >
-      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -left-3 text-white" />
-      <Icon className="absolute h-10 w-10 opacity-30 -bottom-3 -left-3  text-white" />
-      <Icon className="absolute h-10 w-10 opacity-30 -top-3 -right-3 text-white" />
+      <Icon className="absolute h-10 w-10 opacity-50 -top-3 -left-3 text-white" />
+      <Icon className="absolute h-10 w-10 opacity-50 -bottom-3 -left-3  text-white" />
+      <Icon className="absolute h-10 w-10 opacity-50 -top-3 -right-3 text-white" />
       <Icon
-        className="absolute h-10 w-10 opacity-30 -bottom-3 -right-3  text-white" />
+        className="absolute h-10 w-10 opacity-50 -bottom-3 -right-3  text-white" />
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -134,7 +134,7 @@ const AceternityIcon = ({order}) => {
    <div>
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
+          className="absolute inset-[-1000%] lg:animate-[spin_2s_linear_infinite]
          bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
         />
         <span

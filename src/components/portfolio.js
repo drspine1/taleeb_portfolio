@@ -28,7 +28,7 @@ const RecentProjects = () => {
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.5,duration:0.4}}
        className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></motion.div>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-20 md:16">
+      <div className="flex flex-wrap items-center justify-center  gap-20 md:16">
         {projects.map(({id,description,title,image,demo}) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -49,11 +49,12 @@ const RecentProjects = () => {
                   src={image}
                   alt="cover"
                   fill
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 opacity-80"
                 />
               </div>
 
-              <h1 className="font-bold text-2xl   line-clamp-1  text-[#C1C2D3] capitalize">
+             <div className="p-4">
+               <h1 className="font-bold text-2xl   line-clamp-1  text-[#C1C2D3] capitalize">
                 {title}
               </h1>
 
@@ -66,11 +67,7 @@ const RecentProjects = () => {
               >
                 {description}
               </p>
-
-              
-                
-
-                <a 
+                 <a 
                 href={demo} target="_blank" 
                 className=" mx-auto flex items-center gap-1 p-2  mt-6 text-center w-[150px] h-[50px] text-sm text-[#e4ecff] font-bold bg-[#000319] hover:bg-[#1a1a2e] border border-[#e4ecff]">
                   <p className="flex  md:text-xs text-sm text-purple">
@@ -78,6 +75,11 @@ const RecentProjects = () => {
                   </p>
                   <FaArrowUpRightFromSquare className="ms-1" color="#CBACF9" />
                 </a>
+             </div>
+              
+                
+
+              
              
             </PinContainer>
           </div>
