@@ -21,7 +21,7 @@ export function MyApproach() {
   
     {/* <div className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></div> */}
          <div
-        className="pt-10 flex flex-col lg:flex-row items-center   justify-center  w-full gap-4 mx-auto px-8">
+        className="pt-10 flex flex-col md:flex-row items-center   justify-center  w-full gap-4 mx-auto px-8">
         <Card title="Plan & Align" icon={<AceternityIcon order={"step 1"}/>} desc={" Gather requirements, clarify scope, set milestones, and agree on deliverables with the client."}>
           <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900 rounded-3xl overflow-hidden" />
         </Card>
@@ -58,13 +58,13 @@ const Card = ({
   desc
 }) => {
   const [hovered, setHovered] = React.useState(false);
-  const toggleHover = () => setHovered((prev) => !prev);
+  const isTouch = typeof window !== "undefined" && "ontouchstart" in window;
   return (
     <div
       
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-       onClick={toggleHover}
+      onMouseEnter={!isTouch ? () => setHovered(true) : undefined}
+      onMouseLeave={!isTouch ? () => setHovered(false) : undefined}
+      onClick={isTouch ? () => setHovered((prev) => !prev) : undefined}
      
       className="border  group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4  h-[20rem] relative rounded-3xl"
        style={{

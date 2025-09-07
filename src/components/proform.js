@@ -9,21 +9,21 @@ function ContactForm() {
 
        >
     
-      <div className='mb-8 flex md:flex-row flex-col gap-[5%]'>
-        <label htmlFor="name" className='flex-[5%] text-[#e4ecff] text-lg md:text-xl text-left mb-1 md:mb-0'>Name: </label>
+      <div className='mb-8 flex  flex-col gap-[5%]'>
+        <label htmlFor="name" className='flex-[5%] text-[#e4ecff] text-sm md:text-lg text-left mb-1 md:mb-0'>Name*</label>
       <input type="text" id="name" name="name" placeholder='John Doe' required   
       className='flex-[90%] w-full border text-white p-3 outline-none border-gray-300 rounded-md '/>
       </div>
       
-      <div className='mb-8 flex md:flex-row flex-col gap-[5%]'>
-      <label htmlFor="email" className='flex-[5%] text-[#e4ecff] text-lg md:text-xl text-left mb-1 md:mb-0' >Email:</label>
+      <div className='mb-8 flex  flex-col gap-[5%]'>
+      <label htmlFor="email" className='flex-[5%] text-[#e4ecff] text-sm md:text-lg text-left mb-1 md:mb-0' >Email*</label>
       <input type="email" id="email" name="email" placeholder='johndoe@example.com' required 
        className='flex-[90%] w-full border text-white p-3 outline-none border-gray-300 rounded-md '
       />
       </div>
 
-     <div className='mb-8 flex md:flex-row flex-col gap-[5%}'>
-       <label htmlFor="message" className='flex-[5%] text-[#e4ecff] text-lg md:text-xl text-left mb-1 md:mb-0'>Message:</label>
+     <div className='mb-8 flex  flex-col gap-[5%}'>
+       <label htmlFor="message" className='flex-[5%] text-[#e4ecff] text-sm md:text-lg text-left mb-1 md:mb-0'>Message*</label>
       <textarea id="message" name="message "  placeholder='Your message here...' required
        className='flex-[90%] w-full border min-h-3.5 text-white p-3 outline-none border-gray-300 rounded-md '/>
      </div>

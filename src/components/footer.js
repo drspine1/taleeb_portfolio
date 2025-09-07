@@ -8,8 +8,8 @@ import Image from "next/image"
 const Footer = () => {
 return (
 <>
-<section id="contact"   className="relative w-full pt-40  px-6 md:px-0 mx-auto text-center ">
-  <div className=" w-full absolute left-0 h-[90vh] bottom-0 md:-bottom-40 md:min-h-[100vh] bg-[transparent]">
+<section id="contact"   className="relative w-full  pt-40  px-6 md:px-[0] mx-auto text-center ">
+  <div className=" w-full absolute left-0 h-[90vh] bottom-0 md:-bottom-40  md:min-h-[100vh] bg-[transparent]">
    <Image 
    src="/images/footerimage.jpg" 
    alt="footer background image"
@@ -18,7 +18,7 @@ return (
    />
   </div>
  
-<div className="flex flex-col items-center justify-center">
+<div className="flex flex-col items-center justify-center md:mx-auto max-w-3xl relative z-10">
   <div>
 <motion.h5 
   initial={{y:"8px",opacity:0}}
@@ -42,7 +42,7 @@ className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8 mr-1.5"></
   <div
 
 >
- <div className=" w-[90%] md:w-full mb-6 max-w-2xl mx-auto p">
+ <div className="w-full mb-6  mx-auto p">
   <motion.p 
     initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}

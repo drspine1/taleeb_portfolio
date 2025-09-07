@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-               "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto Px-4 px-6 md:px-8 lg:px-20",
+               "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto px-4 md:px-8 lg:px-20",
         className
       )}
        style={{
@@ -62,7 +62,7 @@ console.log(img,spareImg)
          width={400}
          height={300}
         className={cn(
-          "object-cover object-center opacity-40 ",
+          "object-cover  opacity-40 ",
           imgClassName
         )}
       />

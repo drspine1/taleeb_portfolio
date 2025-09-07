@@ -19,6 +19,7 @@ const AboutPage = () => {
         viewport={{once:true, amount:0.4}}
         transition={{delay:0.2,duration:0.4}}
          className="uppercase text-[#BEC1DD] mb-2">get to know</motion.h5>
+        
           <motion.h2 
             initial={{scaleZ:0.5,opacity:0}}
             whileInView={{scaleZ:1, opacity:1}}
