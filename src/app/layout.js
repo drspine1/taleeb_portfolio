@@ -1,4 +1,5 @@
 
+import AppLoader from "@/components/appLoader";
 import "./globals.css";
 
 
@@ -16,8 +17,10 @@ export default function RootLayout({ children }) {
       <html lang="en" suppressHydrationWarning>
         <head />
         <body>
-         
+         <AppLoader>
             {children}
+         </AppLoader>
+           
        
         </body>
       </html>
