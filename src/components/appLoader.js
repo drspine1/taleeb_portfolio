@@ -19,8 +19,8 @@ export default function AppLoader({ children }) {
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
       >
-        <div className="animate-spin rounded-full md:h-16 md:w-16 w-8 h-8 border-t-4 border-b-4 border-purple-400"></div>
-        <span className="ml-4 text-white text-lg font-semibold">
+        <div className="animate-spin rounded-full md:h-16 md:w-16 w-4 h-4 border-t-4 border-b-4 border-purple-400"></div>
+        <span className="ml-4 text-white md:text-lg text-xs font-semibold">
           Loading…
         </span>
       </div>

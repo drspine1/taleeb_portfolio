@@ -6,7 +6,7 @@ import { PinContainer } from "./ui/3d-pin";
 import Image from "next/image"
 const RecentProjects = () => {
   return (
-    <div id="projects" className="py-20 w-full mx-auto text-center mt-40">
+    <div id="projects" className="py-20 w-full mx-auto text-center mt-30">
       <motion.h5 
         initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}

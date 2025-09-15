@@ -1,8 +1,14 @@
+
 @import "tailwindcss";
+
+
+
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+
 
 @theme inline {
   --color-background: var(--background);

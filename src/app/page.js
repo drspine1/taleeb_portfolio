@@ -34,10 +34,10 @@ export default function Home() {
         />
         {/* Hero Section */}
         <HomePage />
+         <RecentProjects/>
         <AboutPage/>
         <Services/>
-         <RecentProjects/>
-         <MyApproach/>
+        <MyApproach/>
          <Quote/>
          <BackgroundRippleEffect/>
          {/* Footer Section */}

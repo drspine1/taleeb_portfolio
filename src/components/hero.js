@@ -22,7 +22,7 @@ export const HomePage = () => {
    className="text-[25px] md:text-[40px]  text-[#e4ecff] font-bold z-10"
    words="Transforming code into captivating experiences and seamless interactions"
    />
-   <p className="text-[#e4ecff] text-sm w-[100%] tracking-wider z-10"> I&apos;m Idris Mutolib, a Proficient Frontend Developer</p>
+   <p className="text-[#e4ecff] text-sm w-[100%] tracking-wider z-10"> I&apos;m Idris Mutolib, a Proficient and experienced Frontend Developer</p>
   <motion.div
     initial={{scale:0.7,opacity:0}}
     whileInView={{scale:1, opacity:1}}
