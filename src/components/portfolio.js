@@ -10,13 +10,13 @@ const RecentProjects = () => {
       <motion.h5 
         initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}
-        viewport={{once:true, amount:0.2}}
-        transition={{delay:0.2,duration:0.4}}
+        viewport={{once:true, amount:0.1}}
+        transition={{delay:0.1,duration:0.2}}
       className="uppercase text-[#BEC1DD] mb-2">my work</motion.h5>
       <motion.h1 
         initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
-        viewport={{once:true, amount:0.2}}
+        viewport={{once:true, amount:0.1}}
         transition={{delay:0.4,duration:0.4}}
       className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase mx-auto w-[96%]  md:w-full">
         A small selection of{" "}

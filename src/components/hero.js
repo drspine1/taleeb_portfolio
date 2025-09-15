@@ -10,7 +10,7 @@ import Link from "next/link";
 export const HomePage = () => {
   return ( 
   <>
-  <div id="home" className="hero-section pb-20 pt-36 h-screen relative w-full bg-opacity-20 z-50">
+  <div id="home" className="hero-section  pt-36 h-screen relative w-full bg-opacity-20 z-50">
   <div>
       <Spotlight className="top-[50%] left-[50%] md:-left-32 md:-top-20 h-screen" fill="white"/>
       <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple"/>
