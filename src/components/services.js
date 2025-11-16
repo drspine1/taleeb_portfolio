@@ -11,13 +11,13 @@ const Services = () => {
         initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.4,duration:0.4}}
+        transition={{delay:0.2,duration:0.2}}
   className="text-[#e4ecff] text-2xl md:text-3xl pb-2 uppercase">my {''} <span className="text-purple-400">expertise</span></motion.h1>
   <motion.div 
   initial= {{opacity:0}}
     whileInView={{ opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.5,duration:0.4}}
+        transition={{delay:0.23,duration:0.2}}
   className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></motion.div>
   <div className="services-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-5">
        {

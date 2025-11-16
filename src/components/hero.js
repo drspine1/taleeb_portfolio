@@ -26,8 +26,8 @@ export const HomePage = () => {
   <motion.div
     initial={{scale:0.7,opacity:0}}
     whileInView={{scale:1, opacity:1}}
-    viewport={{once:true, amount:0.4}}
-    transition={{delay:0.2,duration:0.4}}
+    viewport={{once:true, amount:0.1}}
+    transition={{delay:0.1,duration:0.2}}
   >
     
 <motion.a

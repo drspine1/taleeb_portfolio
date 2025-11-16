@@ -14,7 +14,7 @@ export function MyApproach() {
     initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.2,duration:0.4}}
+        transition={{delay:0.1,duration:0.2}}
   className="text-purple-400  text-xl pb-2 uppercase">My Approach, <br /><span 
    className="text-[#BEC1DD] lowercase text-lg" >is to collaborate closely, communicate openly, and deliver with continuous improvement.</span></motion.p>
   

@@ -24,19 +24,19 @@ return (
   initial={{y:"8px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.2,duration:0.4}}
+        transition={{delay:0.1,duration:0.2}}
 className="uppercase text-[#BEC1DD] mb-2  text-sm">get in touch</motion.h5>
 <motion.h2 
   initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.4,duration:0.4}}
+        transition={{delay:0.23,duration:0.2}}
 className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase">contact {" "} <span className="text-purple-400">me</span> </motion.h2>
 <motion.div 
   initial={{opacity:0}}
         whileInView={{ opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.5,duration:0.4}}
+        transition={{delay:0.25,duration:0.2}}
 className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8 mr-1.5"></motion.div>
 </div>
   <div
@@ -47,7 +47,7 @@ className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8 mr-1.5"></
     initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.2,duration:0.4}}
+        transition={{delay:0.2,duration:0.2}}
   className=" text-lg  w-full text-[#BEC1DD]">I&apos;m currently looking for new opportunities. i&apos;m open to discussing web development projects (frontend),and  collaborations. Let&apos;s connect and create something amazing together!
 </motion.p>
 </div>

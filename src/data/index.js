@@ -121,6 +121,47 @@ export const services = [
 ];
 
 export const projects= [
+
+    {
+    id:5,
+    
+    description: " A modern, clean website for a dental clinic featuring service listings, doctor profiles, before-and-after gallery, pricing, contact form, and appointment booking. Includes SEO-friendly pages, smooth navigation, and a professional medical aesthetic ",
+   technologies: [ ' React', 'next.js', 'tailwind','mongoDB'],
+   demo:"https://brightsmile-dental-clinic.vercel.app/",
+   image:"/images/dental.jpg",
+   title:"dental clinic"
+  },
+  
+     {
+    id:6,
+    
+    description: "An interactive movie discovery platform where users can browse trending films, view movie details, search by genres or titles, and explore trailers. Built with a responsive UI and dynamic API integration for fetching real-time movie data. ",
+   technologies: [ ' React', 'next.js', 'tailwind','mongoDB','TMDB API'],
+   demo:"https://movie-app-mu-pied.vercel.app/",
+   image:"/images/movie.jpg",
+   title:"movie app"
+  },
+
+     {
+    id:7,
+    
+    description: " A full-featured hotel reservation platform where users can explore rooms, view pricing,  and make bookings. It includes authentication, a dynamic booking modal, payment simulation, and an admin dashboard for managing reservations, updating booking statuses. ",
+   technologies: [ ' React', 'next.js', 'tailwind','mongoDB','Stripe API','unsplash API'],
+   demo:"https://deluxe-haven-hotel.vercel.app/",
+   image:"/images/hotel.jpg",
+   title:"Luxe-haven"
+  },
+
+     {
+    id:8,
+    
+    description: " A mechanic workshop application that allows users to request vehicle repairs, book maintenance services, view service pricing, and contact mechanics directly.  ",
+   technologies: [ ' React', 'next.js', 'tailwind','framer-motion'],
+   demo:"https://autopro-garage.vercel.app/",
+   image:"/images/mechanic.jpg",
+   title:"auto-pro"
+  },
+
   {
     id:1,
     description: 'A website for a gym or fitness center that provides information about membership plans, class schedules, trainer profiles, and facilities.',
@@ -128,7 +169,7 @@ export const projects= [
     demo:"https://afims-fitness-gym.vercel.app",
     
     github:"https://github.com/drspine1/afims-fitness-gym.git",
-    image:"/images/gym2.jpg",
+    image:"/images/gym.jpg",
      title:"fitness website"
 
        
@@ -140,7 +181,7 @@ export const projects= [
    technologies: [ 'redux-toolkit', ' React', ' tailwind'],
    demo:"https://anabe-ecommerce.vercel.app",
    github:"https://github.com/drspine1/anabe-ecommerce.git",
-   image:"/images/p.jpg",
+   image:"/images/ecommerce.jpg",
    title:"e-Commerce website"
 
   },
@@ -151,7 +192,7 @@ export const projects= [
    technologies: [ 'JavaScript', ' React', ' tailwind'],
    demo:"https://kaison-real-estate.vercel.app",
    github:"https://github.com/drspine1/kaison-real-estate.git",
-   image:"/images/p1.jpg",
+   image:"/images/real.png",
    title:"Real estate website"
   },
   {
@@ -161,7 +202,9 @@ export const projects= [
    technologies: ['JavaScript', ' React', ' tailwind'],
    demo:"https://prime-barbershop.vercel.app",
    github:"https://github.com/drspine1/prime-barbershop.git",
-   image:"/images/barber1.jpg",
+   image:"/images/barb.jpg",
    title:"saloon website"
-  }
+  },
+
+  
 ]

@@ -10,14 +10,14 @@ export function Quote() {
       <motion.h2 
         initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}
-        viewport={{once:true, amount:0.2}}
-        transition={{delay:0.2,duration:0.4}}
+        
+        transition={{delay:0.1,duration:0.2}}
       className=" text-xl md:text-xl pt-10 pb-2 uppercase text-[#e4ecff]">my favorite <span className="text-purple-400">&quot;quotes&quot;</span></motion.h2>
       <motion.p 
         initial={{y:"10px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.4,duration:0.4}}
+        transition={{delay:0.2,duration:0.2}}
       className="text-[#BEC1DD] pb-8 md:pb-0 text-lg">A collection of timeless quotes from classic literature that inspire and provoke thought.</motion.p>
   </div>
       <div

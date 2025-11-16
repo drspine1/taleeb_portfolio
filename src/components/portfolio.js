@@ -17,7 +17,7 @@ const RecentProjects = () => {
         initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.1}}
-        transition={{delay:0.4,duration:0.4}}
+        transition={{delay:0.2,duration:0.2}}
       className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase mx-auto w-[96%]  md:w-full">
         A small selection of{" "}
         <span className="text-purple-400">recent projects</span>
@@ -26,7 +26,8 @@ const RecentProjects = () => {
          initial={{opacity:0}}
         whileInView={{ opacity:1}}
         viewport={{once:true, amount:0.2}}
-        transition={{delay:0.5,duration:0.4}}
+        transition={{delay:0.25,duration:0.2}} 
+
        className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></motion.div>
       <div className="flex flex-wrap items-center justify-center  gap-20 md:16">
         {projects.map(({id,description,title,image,demo}) => (

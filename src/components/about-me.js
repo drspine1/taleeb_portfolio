@@ -16,15 +16,15 @@ const AboutPage = () => {
           <motion.h5  
         initial={{scaleZ:0.5,opacity:0}}
         whileInView={{scaleZ:1, opacity:1}}
-        viewport={{once:true, amount:0.4}}
-        transition={{delay:0.2,duration:0.4}}
+        viewport={{once:true, amount:0.2}}
+        transition={{delay:0.2,duration:0.2}}
          className="uppercase text-[#BEC1DD] mb-2">get to know</motion.h5>
         
           <motion.h2 
             initial={{scaleZ:0.5,opacity:0}}
             whileInView={{scaleZ:1, opacity:1}}
-            viewport={{once:true, amount:0.4}}
-            transition={{delay:0.4,duration:0.4}}
+            viewport={{once:true, amount:0.2}}
+            transition={{delay:0.25,duration:0.2}}
        className="text-[#e4ecff] text-lg md:text-3xl pb-2 uppercase" >About {" "} <span className="text-purple-400">me</span></motion.h2>
          <motion.div className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8"></motion.div>
           <p  className=" text-lg  md:w-full  max-w-[90%] text-[#BEC1DD]">A glimpse into my work and values, where ideas meet clean, and functional code</p>

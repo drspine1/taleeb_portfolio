@@ -25,7 +25,7 @@ function ContactForm() {
      <div className='mb-8 flex  flex-col gap-[5%}'>
        <label htmlFor="message" className='flex-[5%] text-[#e4ecff] text-sm md:text-lg text-left mb-1 md:mb-0'>Message*</label>
       <textarea id="message" name="message "  placeholder='Your message here...' required
-       className='flex-[90%] w-full border min-h-3.5 text-white p-3 outline-none border-gray-300 rounded-md '/>
+       className='flex-[90%] w-full border  text-white p-3 outline-none border-gray-300 rounded-md '/>
      </div>
      <button type="submit"
      className='bg-white text-[#0a0f2c] hover:opacity-80 font-semibold py-3 px-6 rounded-md transition-colors duration-300'
