@@ -192,7 +192,7 @@ export const projects= [
    technologies: [ 'JavaScript', ' React', ' tailwind'],
    demo:"https://kaison-real-estate.vercel.app",
    github:"https://github.com/drspine1/kaison-real-estate.git",
-   image:"/images/real.png",
+   image:"/images/real.jpg",
    title:"Real estate website"
   },
   {
