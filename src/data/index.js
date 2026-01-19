@@ -155,7 +155,7 @@ export const projects= [
      {
     id:8,
     
-    description: " A mechanic workshop application that allows users to request vehicle repairs, book maintenance services, view service pricing, and contact mechanics directly.  ",
+    description: " A mechanic workshop application [landing page] that allows users to request vehicle repairs via calling, see maintenance services, view service pricing, and contact mechanics directly.  ",
    technologies: [ ' React', 'next.js', 'tailwind','framer-motion'],
    demo:"https://autopro-garage.vercel.app/",
    image:"/images/mechanic.jpg",

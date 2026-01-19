@@ -149,7 +149,7 @@ console.log(img,spareImg)
 
          {
         id===7 &&(
-         <a  href="/images/Mutolib_Resume.pdf"
+         <a  href="/images/idris_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
             download 
