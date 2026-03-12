@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Idris Mutolib - Frontend Developer Portfolio
 
-## Getting Started
+A modern, responsive portfolio website showcasing my work as a Frontend Developer with 3+ years of experience. Built with Next.js 15, React 19, and Tailwind CSS 4.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Tech Stack**: Next.js 15 with App Router, React 19, Tailwind CSS 4
+- **Stunning Animations**: Framer Motion & GSAP for smooth interactions
+- **3D Effects**: Interactive 3D pin cards for project showcase
+- **Responsive Design**: Fully responsive across all devices
+- **SEO Optimized**: Complete meta tags, Open Graph, and sitemap
+- **Performance**: Optimized images and lazy loading
+- **Dark Theme**: Beautiful dark mode with purple accents
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion, GSAP
+- **3D Graphics**: Three.js, React Three Fiber
+- **Icons**: React Icons, Lucide React
+- **Form**: Proforms integration
+
+## 📂 Project Structure
+
+```
+taleeb-portfolio/
+├── src/
+│   ├── app/              # Next.js app directory
+│   ├── components/       # React components
+│   │   ├── ui/          # Reusable UI components
+│   │   └── ...          # Feature components
+│   ├── data/            # Project and service data
+│   └── lib/             # Utility functions
+├── public/
+│   └── images/          # Static images
+└── ...
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/drspine1/taleeb-portfolio.git
+cd taleeb-portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎨 Sections
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero**: Eye-catching introduction with spotlight effects
+- **Projects**: Showcase of 10+ projects with 3D pin cards
+- **About**: Personal information and tech stack
+- **Services**: Frontend development services offered
+- **Approach**: 3-step development process
+- **Contact**: Contact form and social links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌟 Featured Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dental Clinic Website
+- Movie Discovery App
+- Hotel Reservation Platform
+- Mechanic Workshop
+- Fitness Gym Website
+- E-Commerce Store
+- Real Estate Platform
+- Barbershop Website
+- Construction Company Site
+- Fashion E-Commerce
 
-## Deploy on Vercel
+## 📧 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email**: idrismutolib5@gmail.com
+- **GitHub**: [github.com/drspine1](https://github.com/drspine1)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- [Aceternity UI](https://ui.aceternity.com/) for beautiful UI components
+- [Vercel](https://vercel.com) for hosting
+- Next.js team for the amazing framework
+

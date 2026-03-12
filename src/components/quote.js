@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Quote() {
   return (
-<section  id="quotes" className="w-full  mt-40  mx-auto text-center"> 
+<section  id="quotes" className="w-full    mx-auto text-center"> 
   <div className="w-full max-w-7xl  text-center px-6 md:px-0">
       <motion.h2 
         initial={{y:"10px",opacity:0}}
@@ -18,7 +18,7 @@ export function Quote() {
         whileInView={{y:0, opacity:1}}
         viewport={{once:true, amount:0.2}}
         transition={{delay:0.2,duration:0.2}}
-      className="text-[#BEC1DD] pb-8 md:pb-0 text-lg">A collection of timeless quotes from classic literature that inspire and provoke thought.</motion.p>
+      className="text-[#BEC1DD] pb-5 md:pb-0 text-lg">A collection of timeless quotes from classic literature that inspire and provoke thought.</motion.p>
   </div>
       <div
   className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"

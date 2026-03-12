@@ -8,7 +8,7 @@ import Image from "next/image"
 const Footer = () => {
 return (
 <>
-<section id="contact"   className="relative w-full  pt-40  px-6 md:px-[0] mx-auto text-center ">
+<section id="contact"   className="relative w-full  pt-20  px-6 md:px-[0] mx-auto text-center ">
   <div className=" w-full absolute left-0 h-[90vh] bottom-0 md:-bottom-40  md:min-h-[100vh] bg-[transparent]">
    <Image 
    src="/images/footerimage.jpg" 
@@ -42,7 +42,7 @@ className="mx-auto w-[110px] h-[1.5px] bg-purple-400 text-center mb-8 mr-1.5"></
   <div
 
 >
- <div className="w-full mb-6  mx-auto p">
+ <div className="w-full mb-3  mx-auto p">
   <motion.p 
     initial={{y:"15px",opacity:0}}
         whileInView={{y:0, opacity:1}}
