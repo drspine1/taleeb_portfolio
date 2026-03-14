@@ -20,7 +20,7 @@ export default function Error({ error, reset }) {
           Something went wrong
         </h2>
         <p className="text-lg text-[#BEC1DD] mb-8">
-          We encountered an unexpected error. Don't worry, it's not your fault.
+          We encountered an unexpected error. Don&apost worry, it's not your fault.
         </p>
         <button
           onClick={() => reset()}
