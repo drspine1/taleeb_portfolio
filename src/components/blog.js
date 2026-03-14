@@ -55,7 +55,7 @@ const Blog = () => {
         transition={{ delay: 0.3, duration: 0.2 }}
         className="text-lg max-w-3xl mx-auto text-[#BEC1DD] mb-16"
       >
-        Deep dives into my projects, technical challenges, and solutions I've implemented
+        Deep dives into my projects, technical challenges, and solutions I&apos;ve implemented
       </motion.p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
