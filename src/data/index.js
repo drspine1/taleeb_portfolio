@@ -339,4 +339,16 @@ export const projects = [
     github: "https://github.com/drspine1/maison-elegance-website",
     image: "/images/fashion.png",
   },
+  {
+    id: 20,
+    title: "Master SEO",
+    description: "A bilingual SEO blog platform written in French and English. Users can toggle their preferred language, share articles, or copy links instantly — all in a clean, readable layout built for discoverability.",
+    technologies: ['React', 'Next.js', 'Tailwind', 'i18n'],
+    tools: ['VS Code', 'Git'],
+    lighthouse: { performance: 0, accessibility: 0, seo: 0 },
+    optimizations: ['i18n routing', 'SEO meta tags', 'Share API'],
+    demo: "https://blog-platform-ten-brown.vercel.app/en",
+    github: "https://github.com/drspine1/blog-platform",
+    image: "/images/seo.PNG",
+  },
 ];
