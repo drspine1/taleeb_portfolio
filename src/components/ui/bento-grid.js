@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
-
-
-import Image from "next/image"
+import Image from "next/image";
+import { Globe3D } from "./3d-globe";
 
 export const BentoGrid = ({
   className,
@@ -69,9 +68,33 @@ console.log(img,spareImg)
     )
     }
   </div>
+
+          {/* id=2: 3D interactive globe — right side, no atmosphere */}
+          {id === 2 && (
+            <div className="absolute right-0 top-0 w-[60%] h-full overflow-hidden rounded-r-3xl">
+              <Globe3D
+                markers={[
+                  { lat: 40.7128, lng: -74.006, src: "", label: "New York" },
+                  { lat: 51.5074, lng: -0.1278, src: "", label: "London" },
+                  { lat: 35.6762, lng: 139.6503, src: "", label: "Tokyo" },
+                  { lat: -33.8688, lng: 151.2093, src: "", label: "Sydney" },
+                  { lat: 48.8566, lng: 2.3522, src: "", label: "Paris" },
+                  { lat: 28.6139, lng: 77.209, src: "", label: "New Delhi" },
+                  { lat: 25.2048, lng: 55.2708, src: "", label: "Dubai" },
+                  { lat: 1.3521, lng: 103.8198, src: "", label: "Singapore" },
+                ]}
+                config={{
+                  showAtmosphere: false,
+                  bumpScale: 5,
+                  autoRotateSpeed: 2,
+                }}
+              />
+            </div>
+          )}
+
           <div  className={`absolute right-0 -bottom-5 ${id===5 && id===4 && "w-full opacity-0"
             } `}>
-            {spareImg && (
+            {id !== 2 && spareImg && (
               <Image
                 src={spareImg}
                 alt={title}
