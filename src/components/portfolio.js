@@ -165,13 +165,13 @@ const RecentProjects = () => {
 
       {/* Featured 6 — same compact card pattern as museum */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 relative z-10 mt-6">
-        {featuredProjects.map(({ id, description, title, image, demo, github, technologies, lighthouse }) => (
+        {featuredProjects.map(({ id, description, title, image, demo, github, technologies, lighthouse }, index) => (
           <motion.div
             key={id}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: id * 0.08, duration: 0.4 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ delay: index * 0.08, duration: 0.4 }}
             className="group relative bg-[#0d0f1e] border border-purple-500/10 rounded-2xl overflow-hidden hover:border-purple-500/40 transition-all duration-300 hover:shadow-xl hover:shadow-purple-900/20"
           >
             {/* Image */}
@@ -260,7 +260,7 @@ const RecentProjects = () => {
                 {easterEgg && (
                   <motion.div initial={{opacity:0,scale:0.8}} animate={{opacity:1,scale:1}} exit={{opacity:0,scale:0.8}} className="fixed inset-0 z-[1000] flex items-center justify-center pointer-events-none">
                     <div className="bg-[#0d0f1e] border border-purple-500/40 rounded-2xl px-10 py-8 text-center shadow-2xl shadow-purple-900/50">
-                      <div className="text-5xl mb-3">👀</div>
+                    
                       <p className="text-[#e4ecff] text-xl font-bold">Already thinking about it?</p>
                       <p className="text-purple-400 text-sm mt-2">Let&apos;s make it official — hit that contact button.</p>
                     </div>
@@ -325,7 +325,7 @@ const RecentProjects = () => {
                     <div className="flex-1 px-5 py-4 flex flex-col justify-center text-left mt-2 sm:mt-0">
                       <p className="text-purple-400 text-[10px] uppercase tracking-widest font-semibold mb-1">Curator & Author</p>
                       <h3 className="text-[#e4ecff] text-lg font-bold mb-1">Idris Mutolib</h3>
-                      <p className="text-[#BEC1DD]/60 text-xs mb-3">Frontend Developer · 3+ years · 19 projects shipped</p>
+                      <p className="text-[#BEC1DD]/60 text-xs mb-3">Frontend Developer · 3+ years · 20 projects shipped</p>
                       <p className="text-[#BEC1DD]/80 text-sm leading-relaxed">
                         Every project here was built with real intent — late nights, real clients, real problems solved.
                         Explore freely, click the live demos, and if something catches your eye,{" "}
