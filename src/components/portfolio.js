@@ -451,6 +451,17 @@ const MuseumGrid = ({ projects, highlightId }) => (
                 ))}
               </div>
             )}
+            {/* Mobile — text buttons (no hover on touch) */}
+            <div className="flex gap-2 pt-2 sm:hidden">
+              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-white bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors">
+                <FaExternalLinkAlt size={10} /> Live Demo
+              </a>
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#e4ecff] bg-[#13162D] border border-purple-500/30 rounded-lg transition-colors">
+                  <FaGithub size={11} /> Code
+                </a>
+              )}
+            </div>
           </div>
         </motion.div>
       );
@@ -494,12 +505,12 @@ const MuseumList = ({ projects, highlightId }) => (
                 ))}
               </div>
               <div className="flex gap-2 flex-shrink-0">
-                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="p-1.5 bg-purple-600/20 hover:bg-purple-600 border border-purple-500/30 rounded-lg transition-colors">
-                  <FaExternalLinkAlt size={11} className="text-purple-300" />
+                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-2.5 py-1.5 bg-purple-600/20 hover:bg-purple-600 border border-purple-500/30 rounded-lg transition-colors text-purple-300 text-xs font-medium">
+                  <FaExternalLinkAlt size={10} /> <span className="sm:hidden">Demo</span>
                 </a>
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-1.5 bg-[#13162D] hover:bg-[#1a1d3a] border border-purple-500/20 rounded-lg transition-colors">
-                    <FaGithub size={11} className="text-[#BEC1DD]" />
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-2.5 py-1.5 bg-[#13162D] hover:bg-[#1a1d3a] border border-purple-500/20 rounded-lg transition-colors text-[#BEC1DD] text-xs font-medium">
+                    <FaGithub size={11} /> <span className="sm:hidden">Code</span>
                   </a>
                 )}
               </div>
