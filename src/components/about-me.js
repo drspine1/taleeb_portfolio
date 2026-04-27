@@ -42,7 +42,7 @@ const AboutPage = () => {
         >
           <div className="flex flex-col sm:flex-row items-center sm:items-stretch">
             {/* Photo */}
-            <div className="relative w-full sm:w-48 h-52 sm:h-auto flex-shrink-0">
+            <div className="relative w-full sm:w-48 h-72 sm:h-auto flex-shrink-0">
               <Image
                 src="/images/me-1.jpg"
                 alt="Idris Mutolib"
@@ -55,7 +55,7 @@ const AboutPage = () => {
             </div>
 
             {/* Info */}
-            <div className="flex-1 p-6 text-left flex flex-col justify-center gap-3">
+            <div className="flex-1 p-6 text-left flex flex-col justify-center gap-3 mt-2 sm:mt-0">
               <div>
                 <h3 className="text-[#e4ecff] text-2xl font-bold">Idris Mutolib</h3>
                 <p className="text-purple-400 text-[10px] uppercase tracking-widest font-semibold mt-1">Frontend Developer</p>

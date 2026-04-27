@@ -311,9 +311,9 @@ const RecentProjects = () => {
                 >
                   <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-0">
                     {/* Author image */}
-                    <div className="relative w-full sm:w-40 h-40 sm:h-auto flex-shrink-0">
+                    <div className="relative w-full sm:w-40 h-64 sm:h-auto flex-shrink-0">
                       <Image
-                        src="/images/me-1.jpg"
+                        src="/images/me-3.jpg"
                         alt="Idris Mutolib"
                         fill
                         className="object-cover object-top"
@@ -322,7 +322,7 @@ const RecentProjects = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f1e]/80 to-transparent sm:hidden" />
                     </div>
                     {/* Text */}
-                    <div className="flex-1 px-5 py-4 flex flex-col justify-center text-left">
+                    <div className="flex-1 px-5 py-4 flex flex-col justify-center text-left mt-2 sm:mt-0">
                       <p className="text-purple-400 text-[10px] uppercase tracking-widest font-semibold mb-1">Curator & Author</p>
                       <h3 className="text-[#e4ecff] text-lg font-bold mb-1">Idris Mutolib</h3>
                       <p className="text-[#BEC1DD]/60 text-xs mb-3">Frontend Developer · 3+ years · 19 projects shipped</p>
