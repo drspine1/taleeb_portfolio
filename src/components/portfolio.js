@@ -313,7 +313,7 @@ const RecentProjects = () => {
                     {/* Author image */}
                     <div className="relative w-full sm:w-40 h-40 sm:h-auto flex-shrink-0">
                       <Image
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                        src="/images/me-1.jpg"
                         alt="Idris Mutolib"
                         fill
                         className="object-cover object-top"

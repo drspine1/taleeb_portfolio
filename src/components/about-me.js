@@ -44,7 +44,7 @@ const AboutPage = () => {
             {/* Photo */}
             <div className="relative w-full sm:w-48 h-52 sm:h-auto flex-shrink-0">
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                src="/images/me-1.jpg"
                 alt="Idris Mutolib"
                 fill
                 className="object-cover object-top"
@@ -57,8 +57,8 @@ const AboutPage = () => {
             {/* Info */}
             <div className="flex-1 p-6 text-left flex flex-col justify-center gap-3">
               <div>
-                <p className="text-purple-400 text-[10px] uppercase tracking-widest font-semibold mb-1">Frontend Developer</p>
                 <h3 className="text-[#e4ecff] text-2xl font-bold">Idris Mutolib</h3>
+                <p className="text-purple-400 text-[10px] uppercase tracking-widest font-semibold mt-1">Frontend Developer</p>
               </div>
               <p className="text-[#BEC1DD]/70 text-sm leading-relaxed">
                 3+ years building production-grade React & Next.js apps. I care about clean code, fast UIs, and experiences that actually feel good to use.
